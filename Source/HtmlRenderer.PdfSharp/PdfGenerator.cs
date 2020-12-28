@@ -10,9 +10,15 @@
 // - Sun Tsu,
 // "The Art of War"
 
+#if NET20
 using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
+#else 
+using PdfSharpCore;
+using PdfSharpCore.Drawing;
+using PdfSharpCore.Pdf;
+#endif
 using System;
 using TheArtOfDev.HtmlRenderer.Core;
 using TheArtOfDev.HtmlRenderer.Core.Entities;

@@ -12,7 +12,11 @@
 
 using System;
 using TheArtOfDev.HtmlRenderer.Adapters;
+#if NET20
 using PdfSharp.Drawing;
+#else 
+using PdfSharpCore.Drawing;
+#endif
 
 namespace TheArtOfDev.HtmlRenderer.PdfSharp.Adapters
 {
